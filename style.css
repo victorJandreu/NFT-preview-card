@@ -1,0 +1,209 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
+.out {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --dark-blue-main: hsl(217, 54%, 11%);
+    --dark-blue-card: hsl(216, 50%, 16%);
+    --dark-blue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    background-color: var(--dark-blue-main);
+    color: var(--soft-blue);
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* general values  */
+
+h1, .nft{
+    font-weight: 600;
+}
+
+h1, .profile span{
+    color: var(--white);
+    transition: all 0.3s ease-in;
+}
+
+h1:hover, .profile span:hover{
+    cursor: pointer;
+    color: var(--cyan);
+}
+
+main, .square{
+    border-radius: 10px;
+}
+
+p, span{
+    font-size: 0.9em;
+}
+
+
+/* section, div, main...   */
+
+main{
+    width: 80%;
+    max-width: 300px;
+    background-color: var(--dark-blue-card);
+    padding: 1.5rem;
+    box-shadow: 1px 1px 5px var(--cyan), -1px -1px 5px var(--cyan);
+}
+
+footer{
+    width: 80%;
+    max-width: 300px;
+    font-size: 1rem;
+    color: var(--white);
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cyan);
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+.profile, .priceTime{
+    display: flex;
+    align-items: center;
+}
+
+.priceTime{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+
+.image{
+    width: 100%;
+    height: 230px;
+    position: relative;
+}
+
+.withoutSvg{
+    position: absolute;
+    z-index: 3;
+    border-radius: 10px;
+    background-image:  url("./images/image-equilibrium.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+}
+
+.withSvg{
+    background-image: linear-gradient(hsla(215, 51%, 70%, 0.5), hsla(215, 74%, 70%, 0.5)) , url("./images/image-equilibrium.jpg");
+    position: absolute;
+    z-index: 2;
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+}
+
+.withoutSvg:hover{
+    z-index: 1;
+}
+
+.withSvg:hover{
+    z-index: 4;
+    cursor: pointer;
+}
+
+
+
+/* h1, h2, p....  */
+
+h1{
+    font-size: 1.3em;
+}
+
+
+.profile h2{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+
+.text{
+    margin-bottom: 0;
+}
+
+.nft{
+    color: var(--cyan);
+}
+
+
+
+/* img, svg, span.... */
+
+
+.image svg{
+
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    
+}
+
+
+.avatar{
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-right: 1rem;
+}
+
+svg{
+    margin-right: 0.3rem;
+}
+
+hr{
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+    height: 1px;
+    border-color: var(--dark-blue-line);
+    background: var(--dark-blue-line);
+    border: none;
+}
+
+
+
